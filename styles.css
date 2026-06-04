@@ -406,7 +406,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .trust-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-content: center;
   gap: 32px;
   margin-top: 2rem;
 }
